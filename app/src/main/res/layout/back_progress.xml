@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_margin="20dp"
+       android:background="@color/white"
+       android:layout_centerHorizontal="true"
+       android:layout_height="160dp">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Exit "
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="20dp"
+           android:textColor="@color/black"
+           android:fontFamily="@font/gothammedium"
+           android:textSize="20dp"
+           android:padding="5dp"
+           android:id="@+id/t1"/>
+       <TextView
+           android:layout_below="@+id/t1"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="5dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Do You Want To Sure Exit ?"
+           android:textColor="@color/black"
+           android:fontFamily="@font/gothammedium"
+           android:textSize="16dp"
+           android:padding="5dp"
+           android:id="@+id/t2"/>
+
+       <TextView
+           android:layout_alignParentBottom="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="No"
+           android:textColor="@color/black"
+           android:fontFamily="@font/gothammedium"
+           android:textSize="16dp"
+           android:padding="5dp"
+           android:layout_toLeftOf="@+id/wrong1"
+           android:layout_margin="20dp"
+           android:id="@+id/wrong"/>
+
+       <TextView
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Yes"
+           android:layout_margin="20dp"
+           android:textColor="@color/black"
+           android:fontFamily="@font/gothammedium"
+           android:textSize="16dp"
+           android:padding="5dp"
+           android:id="@+id/wrong1"/>
+
+   </RelativeLayout>
+</RelativeLayout>

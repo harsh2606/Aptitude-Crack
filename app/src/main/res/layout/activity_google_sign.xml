@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:tint="@color/white"
+        android:id="@+id/log"
+        android:visibility="gone">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In To Start Test"
+        android:layout_below="@+id/log"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/gothammedium"
+        android:visibility="gone"></TextView>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sign_in_button"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/google_login"
+            android:layout_alignParentBottom="true">
+
+        </ImageView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sep"
+        android:src="@drawable/seperator"
+        android:layout_above="@+id/sign_in_button">
+
+    </ImageView>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fb"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/sign_in_button"
+        android:src="@drawable/fb_login"
+        >
+
+    </ImageView>
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+</RelativeLayout>
+

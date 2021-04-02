@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/li1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backgroundallresult"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3">
+
+                    <TextView
+                        android:id="@+id/testdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Test Date: "
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/gothammedium"
+
+                        >
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/testdate"
+                        android:padding="5dp"
+                        android:text="Test Date: "
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/gothammedium">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/questions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/testdate"
+                        android:padding="5dp"
+                        android:text="Questions :"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/gothammedium"></TextView>
+
+                    <TextView
+                        android:id="@+id/txttotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/testdate"
+                        android:layout_toRightOf="@+id/questions"
+                        android:padding="5dp"
+                        android:text="10"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/gothammedium"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/questions"
+                        android:weightSum="4">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/aq"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="10"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/gothammedium"></TextView>
+
+                            <TextView
+                                android:id="@+id/attemptedtxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/aq"
+                                android:text="Attempted"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/gothammedium"></TextView>
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/view"></View>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/ri"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="10"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/gothammedium"></TextView>
+
+                            <TextView
+                                android:id="@+id/righttxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ri"
+                                android:text="Right"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/gothammedium"></TextView>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/view"></View>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/wr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="10"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/gothammedium"></TextView>
+
+                            <TextView
+                                android:id="@+id/wrongtxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/wr"
+                                android:text="Wrong"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/gothammedium"></TextView>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/view"></View>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+
+                            <TextView
+                                android:id="@+id/txttime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="10"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/gothammedium"></TextView>
+
+                            <TextView
+                                android:id="@+id/timetken"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txttime"
+                                android:text="Time Taken"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/gothammedium"></TextView>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/view"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7">
+
+                    <TextView
+                        android:id="@+id/marks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/gothammedium"></TextView>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/easy"
+            android:layout_gravity="right"/>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

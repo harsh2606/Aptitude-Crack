@@ -1,0 +1,35 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"> <!-- Remove <selector> wehn you are using <layer-list> -->
+    <item android:id="@android:id/background">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <corners android:radius="5dp" />
+            <solid android:color="@color/colorPrimary" />
+<!--            <gradient-->
+<!--                android:angle="45"-->
+<!--                android:endColor="#534578"-->
+<!--                android:startColor="#423261"-->
+<!--                android:type="linear" />-->
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape xmlns:android="http://schemas.android.com/apk/res/android"
+                android:shape="rectangle">
+
+                <corners android:radius="5dp" />
+                <gradient
+                    android:angle="45"
+                    android:endColor="#2b76e0"
+                    android:startColor="#2b76e0"
+                    android:type="linear" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>
+
+
+<!--    android:endColor="#b3e5fc"-->
+<!--    android:startColor="#81d4fa"-->
+
+<!--    android:endColor="#B05BFF"-->
+<!--    android:startColor="#E19EF0"-->

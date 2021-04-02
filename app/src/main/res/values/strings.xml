@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Apttitude Crack</string>
+    <string name="rule"><u>Test Rules</u></string>
+    <string name="title_activity_microbiology_">Microbiology_Activity</string>
+    <string-array name="planets_array">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+    <string name="facebook_app_id">668417280586728</string>
+    <string name="fb_login_protocol_scheme">fb668417280586728</string>
+</resources>

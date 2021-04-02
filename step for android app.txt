@@ -1,0 +1,56 @@
+->main activity....(gridview)
+->adepter......(custom grid copy+pest)
+->layout......(design part create)
+->splash....(main code)
+
+
+Slider step:--
+
+->main activity(splah->)viewpager->tablayout</viewpag(end)>
+->declare variable tab,view
+->than findviewid
+->(exend)implement(alt+ent)
+
+
+tablayot step....
+->setupwith
+->tabname..(2) 
+
+viewpage->setAdepter
+
+
+<miss-match>
+select * from tblquestion where question_id not in (select question_id from tblanswerr)
+
+
+
+<count for que subtitle vise>
+select ts.*, IFNULL(q.tc,0) as question_count from tblsubtitle ts
+LEFT JOIN (select count(question_id) as tc,sub_title_id  from tblquestion group by sub_title_id) as q
+ON ts.sub_title_id = q.sub_title_id
+
+
+
+<25 thi oacha mate>
+LEFT JOIN (SELECT count(*) as t, sub_title_id FROM tblquestion GROUP BY sub_title_id) as q ON s.sub_title_id = q.sub_title_id
+LEFT JOIN tbltitle tt ON s.title_id = tt.title_id
+) as tamp
+WHERE total_question < 25
+
+
+<25 thi ocha n sema ketla reqire ch>
+SELECT *, (required-total_question) as remaining FROM (select s.*, tt.titlename, IFNULL(q.t,0) as total_question, 25 as required from tblsubtitle s
+LEFT JOIN (SELECT count(*) as t, sub_title_id FROM tblquestion GROUP BY sub_title_id) as q ON s.sub_title_id = q.sub_title_id
+LEFT JOIN tbltitle tt ON s.title_id = tt.title_id
+) as tamp
+WHERE total_question < 25
+
+
+
+14mcal030.roshan@gmail.com
+
+https://medium.com/android-bits/android-material-button-e7b92cb014e0
+
+
+https://developers.facebook.com/docs/facebook-login/android/(fb login)
+

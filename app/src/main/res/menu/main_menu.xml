@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/check"
+        android:title="Rate Us">
+    </item>
+    <item
+        android:id="@+id/action_settings"
+        app:showAsAction="never"
+        android:title="More App">
+    </item>
+    <item
+        android:id="@+id/Website"
+        app:showAsAction="never"
+        android:title="Website">
+    </item>
+    <item
+        android:id="@+id/share"
+        app:showAsAction="never"
+        android:title="Share">
+    </item>
+</menu>

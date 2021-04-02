@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "725282698480",
+    "firebase_url": "https://aptitude-crack-267409.firebaseio.com",
+    "project_id": "aptitude-crack-267409",
+    "storage_bucket": "aptitude-crack-267409.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725282698480:android:d1fc0ccf91b636b3cbfe35",
+        "android_client_info": {
+          "package_name": "com.example.apttitude_crack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "725282698480-1inol4nd70kcaea98sg3ciibeu3ve8at.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.apttitude_crack",
+            "certificate_hash": "771c97273805738f197b5910ee665565272767d6"
+          }
+        },
+        {
+          "client_id": "725282698480-o3hm1m3eu8ono4lp2vv39l60ovbn6a4b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_djI0F7qvSHq8jSZlj5V5zs2j9EDG9CY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "725282698480-o3hm1m3eu8ono4lp2vv39l60ovbn6a4b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

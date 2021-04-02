@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    <color name="colorPrimary">#4e342e</color>-->
+    <color name="colorPrimary">#1F253D</color>
+    <!--    <color name="colorPrimary">#0277bd</color>-->
+    <!--    <color name="colorPrimaryDark">#3e2723</color>-->
+    <color name="colorPrimaryDark">#101725</color>
+    <!--    <color name="colorPrimaryDark">#01579b</color>-->
+    <color name="colorAccent">#000000</color>
+    <color name="textview_selector">#000000</color>
+    <color name="right">#86FF00</color>
+    <color name="wrong">#F44336</color>
+    <color name="solid_color">#44000000</color>
+    <color name="secProgress_color">#ffe0e0e0</color>
+    <color name="progress_color">#8790B1</color>
+    <!--    <color name="progress_color">#2196F3</color>-->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <!--    <color name="topbar">#4e342e</color>-->
+    <color name="topbar">#1F253D</color>
+    <!--    <color name="topbar">#0277bd</color>-->
+    <color name="background">#394263</color>
+    <!--    <color name="background">#efebe9</color>-->
+</resources>

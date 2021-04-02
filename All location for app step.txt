@@ -1,0 +1,25 @@
+main-log:-  login activity
+slider:- splash
+main- apptitude& test :- splash
+opation menuu:- splash
+
+
+apptitude side title(frame):-title adepter
+subtitle-progressbar-visitedque:-airthmetic adepter
+
+All Question-Objective-Ans-Report-Share:-A_Question_Activity
+
+Test side:-
+Tite mate :- test adepter
+SubTitle :-  test adepter
+Rules:-      test adepter
+fb/google login :- googlesignactivity
+test Question random :- Testactivity
+
+Result:-  resultactivity
+
+viewanser:-  answeractivity
+all result:- all result adepter///or gridview-all result activity
+
+
+

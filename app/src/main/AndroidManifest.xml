@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.apttitude_crack">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme1">
+        <activity android:name=".ReportActivity"></activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.apttitude_crack.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity android:name=".AllResultActivity" />
+        <activity android:name=".AnswerActivity" />
+        <activity android:name=".GoogleSignActivity" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".A_Question_Activity" />
+        <activity android:name=".Digital_Electronics_Activity" />
+        <activity android:name=".Logical_Reasoning_Activity" />
+        <activity android:name=".Data_Interpretation_Activity" />
+        <activity android:name=".General_Knowledge_Activity" />
+        <activity android:name=".Biochemistry_Activity" />
+        <activity android:name=".EEE_Activity" />
+        <activity android:name=".Civil_Engineering_Activity" />
+        <activity android:name=".Mechanical_Engineering_Activity" />
+        <activity android:name=".Basic_Electronics_Activity" />
+        <activity android:name=".Database_Questions_Activity" />
+        <activity android:name=".Microbiology_Activity" />
+        <activity android:name=".Networking_Questions_Activity" />
+        <activity android:name=".Arithmetic_Aptitude_Activity" />
+        <activity android:name=".splash"
+            android:theme="@style/AppBaseTheme" />
+        <activity android:name=".SyncSystemActivity" />
+        <activity android:name=".login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity_splash" />
+        <activity android:name=".Activity_splash" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

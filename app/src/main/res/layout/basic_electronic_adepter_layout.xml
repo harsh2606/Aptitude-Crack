@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#000"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+
+
+        <ImageView
+            android:src="@drawable/eee"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/basiceleimg"
+            />
+
+        <TextView
+            android:id="@+id/basiceletext"
+            android:layout_centerHorizontal="true"
+            android:text="Train"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gothammedium"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/eee"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

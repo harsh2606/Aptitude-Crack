@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:text="Test"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/time"
+            android:layout_toLeftOf="@+id/sharesnap"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:text="Test"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r"
+            android:fontFamily="@font/gothammedium"/>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/r"
+            android:textColor="@color/white"
+            android:id="@+id/sub"
+            android:singleLine="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gothammedium"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/sharesnap"
+            android:src="@drawable/lens"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:tint="#fff"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/top"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/txttotal"
+            android:text="01/10"
+            android:textSize="20dp"
+            android:textColor="#F50C0C"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/gothammedium"></TextView>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/txttime"
+            android:text="10:00"
+            android:textSize="20dp"
+            android:textColor="#37F50C"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/gothammedium"></TextView>
+
+        <ProgressBar
+            android:id="@+id/progress_bar_item_image"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:progress="0"
+            android:layout_marginBottom="5dp"
+            android:progressDrawable="@drawable/progress_bg" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/snap"
+            android:background="@color/background">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cwqd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp">
+
+            <WebView
+                android:id="@+id/descussion_que"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cwq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/cwqd"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp">
+
+            <WebView
+                android:id="@+id/question"
+                android:visibility="gone"
+                android:layout_below="@+id/descussion_que"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <RadioGroup
+                android:layout_below="@+id/cwq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdg"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/r1"
+                        android:background="@drawable/corners"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:layout_toRightOf="@+id/right1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/ans1"
+                            android:visibility="gone"
+                            android:button="@drawable/circle"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/gothammedium"/>
+
+                        <WebView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ans1"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginRight="3dp"
+                            android:id="@+id/opationaweb"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/r2"
+                        android:background="@drawable/corners"
+                        android:layout_below="@+id/r1"
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+
+                        <RadioButton
+                            android:layout_toRightOf="@+id/right2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ans2"
+                            android:visibility="gone"
+                            android:button="@drawable/circle"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/gothammedium"/>
+
+                        <WebView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ans2"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginRight="3dp"
+                            android:id="@+id/opationbweb"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@+id/r2"
+                        android:id="@+id/r3"
+                        android:background="@drawable/corners"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:layout_toRightOf="@+id/right3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ans3"
+                            android:visibility="gone"
+                            android:button="@drawable/circle"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/gothammedium"/>
+
+                        <WebView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ans3"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginRight="3dp"
+                            android:id="@+id/opationcweb"
+
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_below="@+id/r3"
+                        android:id="@+id/r4"
+                        android:background="@drawable/corners"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:layout_toRightOf="@+id/right4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ans4"
+                            android:visibility="gone"
+                            android:button="@drawable/circle"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/gothammedium"/>
+
+                        <WebView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ans4"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginRight="3dp"
+                            android:id="@+id/opationdweb"
+
+                            />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@+id/r4"
+                        android:id="@+id/r5"
+                        android:background="@drawable/corners"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:layout_toRightOf="@+id/right5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ans5"
+                            android:visibility="gone"
+                            android:button="@drawable/circle"
+                            android:layout_margin="5dp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/gothammedium"/>
+
+                        <WebView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ans5"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginRight="3dp"
+                            android:id="@+id/opationeweb"
+
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RadioGroup>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb"
+                android:buttonTint="@color/white"
+                android:text="MarkAsReview"
+                android:textColor="@color/white"
+                android:layout_below="@+id/rdg"></CheckBox>
+            <RelativeLayout
+
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4"
+                    android:id="@+id/ll">
+                    <ImageView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtreview"
+                       android:src="@drawable/review_press_unpress"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/previous"
+                       android:src="@drawable/previous_press_unpress"
+                        android:layout_weight="1">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/next"
+                        android:layout_weight="1"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/next_press_unpress">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/finish"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/submit_press_unpress">
+
+                    </ImageView>
+                </LinearLayout>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_below="@id/btn"
+                android:id="@+id/v1">
+
+            </View>
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:id="@+id/wbsol"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:id="@+id/tid"
+                android:fontFamily="@font/gothammedium"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
